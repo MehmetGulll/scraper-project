@@ -1,4 +1,5 @@
 class Product:
+    # burdaki init kısmı Product sınıfını tanımlamak amacıyla yapıldı yani burası constructor kısmı. Uygulama çalıştığı zaman constructor sadece 1 defa çalışır. Amaç xml yapısından gelecek olan değerlerin nesnenin fieldlarını oluşturmasıdır. Vermiş oldugunuz örnek JSON yapısında USD ve Active statik oldugu için kendi elimle ekledim.
     def __init__(self, stock_code, name, images, price, discounted_price, product_type, quantity, color, series, fabric, model_measurements, product_measurements, is_discounted, price_unit="USD", status="Active"):
         self.stock_code = stock_code
         self.name = name
@@ -16,7 +17,7 @@ class Product:
         self.price_unit = price_unit
         self.status = status
     
-    def to_dict(self):
+    def to_dict(self): # burda ise gelen değerlerin fieldlarını belirledikten sonra uygun JSON formatına getirmek amacıyla dict yani dictionary haline getirilir.
         return {
             'stock_code': self.stock_code,
             'name': self.name,
