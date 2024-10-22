@@ -8,9 +8,14 @@ Cleans and formats the data (e.g., removing HTML tags, capitalizing product name
 Inserts or updates products in MongoDB, ensuring no duplicates.
 Modular and object-oriented code for easy maintenance and extension.
 
-## Setup
+# Installation
+git clone https://github.com/MehmetGulll/scraper-project.git
 
+## Setup
 1. Install dependencies:
 pip install pymongo
 2. Run the scraper:
 3. MongoDB should be running locally or update the MongoDB URI in `mongodb.py`.
+
+## Running
+python main.py
